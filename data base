@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Our Doctors</h1>
+</header>
+
+
+<div class="container">
+
+    <h2>Available Doctors</h2>
+
+    <div>
+        <h3>Dr. Arun</h3>
+        <p>Specialization: Cardiologist</p>
+        <p>Experience: 10 Years</p>
+
+        <a href="appointment.html">
+            <button>Book Appointment</button>
+        </a>
+    </div>
+
+
+    <hr>
+
+
+    <div>
+        <h3>Dr. Priya</h3>
+        <p>Specialization: Dermatologist</p>
+        <p>Experience: 8 Years</p>
+
+        <a href="appointment.html">
+            <button>Book Appointment</button>
+        </a>
+    </div>
+
+
+</div>
+
+</body>
+</html>data
