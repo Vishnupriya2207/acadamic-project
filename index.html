@@ -1,0 +1,115 @@
+package main;
+
+import dao.PatientDAO;
+import model.Patient;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        Scanner sc = new Scanner(System.in);
+
+        PatientDAO patientDAO = new PatientDAO();
+
+
+        System.out.println("Hospital Appointment System");
+
+
+        System.out.println("1. Register");
+        System.out.println("2. Login");
+
+        System.out.print("Enter Choice: ");
+        int choice = sc.nextInt();
+
+
+        sc.nextLine();
+
+
+        if(choice == 1) {
+
+
+            System.out.print("Enter Name: ");
+            String name = sc.nextLine();
+
+
+            System.out.print("Enter Age: ");
+            int age = sc.nextInt();
+
+            sc.nextLine();
+
+
+            System.out.print("Enter Gender: ");
+            String gender = sc.nextLine();
+
+
+            System.out.print("Enter Phone: ");
+            String phone = sc.nextLine();
+
+
+            System.out.print("Enter Email: ");
+            String email = sc.nextLine();
+
+
+            System.out.print("Enter Password: ");
+            String password = sc.nextLine();
+
+
+
+            Patient patient = new Patient(
+                    name,
+                    age,
+                    gender,
+                    phone,
+                    email,
+                    password
+            );
+
+
+            patientDAO.registerPatient(patient);
+
+        }
+
+
+        else if(choice == 2) {
+
+
+            System.out.print("Enter Email: ");
+            String email = sc.nextLine();
+
+
+            System.out.print("Enter Password: ");
+            String password = sc.nextLine();
+
+
+
+            boolean result = patientDAO.loginPatient(email, password);
+
+
+            if(result) {
+
+                System.out.println("Login Successful");
+
+            }
+            else {
+
+                System.out.println("Invalid Login");
+
+            }
+
+        }
+
+
+        else {
+
+            System.out.println("Invalid Choice");
+
+        }
+
+
+        sc.close();
+
+    }
+}
