@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cancel Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Cancel Appointment</h1>
+</header>
+
+
+<div class="container">
+
+<h2>Enter Appointment Details</h2>
+
+
+<input type="number" placeholder="Appointment ID">
+
+
+<button>
+    Cancel Appointment
+</button>
+
+
+</div>
+
+
+</body>
+</html>
