@@ -1,0 +1,41 @@
+package model;
+
+public class Doctor {
+
+    private int doctorId;
+    private String doctorName;
+    private String specialization;
+    private String phone;
+    private String email;
+
+
+    public Doctor(String doctorName, String specialization,
+                  String phone, String email) {
+
+        this.doctorName = doctorName;
+        this.specialization = specialization;
+        this.phone = phone;
+        this.email = email;
+    }
+
+
+    public String getDoctorName() {
+        return doctorName;
+    }
+
+
+    public String getSpecialization() {
+        return specialization;
+    }
+
+
+    public String getPhone() {
+        return phone;
+    }
+
+
+    public String getEmail() {
+        return email;
+    }
+
+}
